@@ -1,9 +1,9 @@
 import { DialogAddUserComponent } from './../dialog-add-user/dialog-add-user.component';
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatTooltipModule} from '@angular/material/tooltip';
-import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-user',
@@ -13,12 +13,11 @@ import {MatDialog, MatDialogModule} from '@angular/material/dialog';
   styleUrl: './user.component.scss'
 })
 export class UserComponent {
- 
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) { }
 
 
-  
+
 
   openDialog() {
     this.dialog.open(DialogAddUserComponent);
